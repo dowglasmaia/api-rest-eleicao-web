@@ -1,4 +1,4 @@
-package org.maia.web.eleicao.services.generic;
+package org.maia.web.eleicao.services.factory;
 
 import org.maia.web.eleicao.domain.Eleitor;
 
