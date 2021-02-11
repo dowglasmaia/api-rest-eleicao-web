@@ -1,6 +1,6 @@
 package org.maia.web.eleicao.services.factory;
 
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 import java.io.Serializable;
 import java.util.List;
 

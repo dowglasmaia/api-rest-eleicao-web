@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class ResourceExceptionsHandler {
 
-	@ExceptionHandler(OpoerationErrorException.class)
-	public ResponseEntity<StandardError> runtimeExceptionError(	OpoerationErrorException e,	HttpServletRequest request) {
+	@ExceptionHandler(OperationException.class)
+	public ResponseEntity<StandardError> runtimeExceptionError(	OperationException e,	HttpServletRequest request) {
 				
 			StandardError error = StandardError.builder()
 					.timestamp(System.currentTimeMillis())
