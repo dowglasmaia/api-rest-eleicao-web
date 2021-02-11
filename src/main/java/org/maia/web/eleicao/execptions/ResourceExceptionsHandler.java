@@ -20,6 +20,7 @@ public class ResourceExceptionsHandler {
 					.status(HttpStatus.BAD_REQUEST.value())
 					.error("Error Interno")
 					.message(e.getMessage())
+					.cause(e.getCause())
 					.path(request.getRequestURI())
 					.build();
 			
@@ -45,8 +46,10 @@ public class ResourceExceptionsHandler {
 		ValidationError err = new ValidationError(
 				System.currentTimeMillis(), 
 				HttpStatus.UNPROCESSABLE_ENTITY.value(),
-				"Error de Validação de dados", "Reveja o(s) Campo(s) com erro(s).", 
+				"Error de Validação de dados", 
+				"Reveja o(s) Campo(s) com erro(s).",
 				request.getRequestURI());
+				
 		
 		for (FieldError x : e.getBindingResult().getFieldErrors()) {
 			err.addError(x.getField(), x.getDefaultMessage());
