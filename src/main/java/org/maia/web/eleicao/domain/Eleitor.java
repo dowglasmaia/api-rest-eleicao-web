@@ -26,7 +26,6 @@ public class Eleitor extends GenericDomain{
 	@Column(length = 100, nullable = true)
 	private String nome;
 
-
 	@DateTimeFormat(iso = ISO.DATE, pattern ="dd/MM/yyyy" )
 	private LocalDate dataNascimento;
 
