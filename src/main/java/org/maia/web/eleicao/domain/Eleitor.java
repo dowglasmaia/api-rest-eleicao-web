@@ -33,24 +33,15 @@ public class Eleitor extends GenericDomain{
 	private String cpf;
 
 	@Column(length = 20)
-	private String tefeloneFixo;
-
-	@Column(length = 20)
 	private String tefeloneCelular;
-
-	@Column(unique = true, nullable = true)
-	private String login;
-
-	@Column(nullable = true)
-	private String senha;
 
 	@Column(length = 100, unique = true)
 	private String email;
 
 	@Column(length = 5, nullable = true)
-	private String aptoVotar;
+	private Boolean isAptoVotar;
 
 	@Column(unique = true, nullable = false)
-	private String urlFoto;
+	private String pathFoto;
 
 }

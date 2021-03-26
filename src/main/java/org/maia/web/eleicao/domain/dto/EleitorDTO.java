@@ -25,18 +25,12 @@ public class EleitorDTO extends GenericDomain {
 
 	private String cpf;
 
-	private String tefeloneFixo;
-
 	private String tefeloneCelular;
-
-	private String login;
-
-	private String senha;
-
+	
 	private String email;
 
-	private String aptoVotar;
+	private Boolean isAptoVotar;
 
-	private String urlFoto;
+	private String pathFoto;
 
 }
