@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public interface ICrudServiceFactory<T, PK> extends Serializable {
+public interface ICrudFactory<T, PK> extends Serializable {
 
 	@Transactional(rollbackFor = Exception.class)
 	T save(T entity);

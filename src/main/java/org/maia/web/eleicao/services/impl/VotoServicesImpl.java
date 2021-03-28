@@ -3,11 +3,10 @@ package org.maia.web.eleicao.services.impl;
 
 import org.maia.web.eleicao.domain.dto.VotoDTOBuilder;
 import org.maia.web.eleicao.services.interfaces.VotoServices;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class VotoServicesImpl implements VotoServices {

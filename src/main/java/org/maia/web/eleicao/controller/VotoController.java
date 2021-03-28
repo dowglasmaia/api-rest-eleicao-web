@@ -1,7 +1,6 @@
 package org.maia.web.eleicao.controller;
 
 import org.maia.web.eleicao.domain.dto.VotoDTOBuilder;
-import org.maia.web.eleicao.domain.enums.TipoVoto;
 import org.maia.web.eleicao.services.interfaces.VotoServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

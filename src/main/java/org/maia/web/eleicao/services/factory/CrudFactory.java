@@ -18,13 +18,13 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j	
 @Service
-public abstract class CrudServiceFactory<T, PK extends Serializable> implements ICrudServiceFactory<T, PK> {
+public abstract class CrudFactory<T, PK extends Serializable> implements ICrudFactory<T, PK> {
 	private static final long serialVersionUID = 1L;
 
 	private final JpaRepository<T, PK> repository;
 
 	@Autowired
-	public CrudServiceFactory(JpaRepository<T, PK> repository) {
+	public CrudFactory(JpaRepository<T, PK> repository) {
 		this.repository = repository;
 	}
 
